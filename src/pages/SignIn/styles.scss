@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.error-message {
+  font-size: 15px;
+  position: absolute;
+  color: red;
+  bottom: 0;
+  left: 0;
+}
+
+.phone{
+  > p{
+    display: none;
+  }
+  &.error > p {
+    display: unset;
+    position: absolute;
+    bottom: -32px;
+    left: -4px;
+  }
+}
+
+.phone .MuiInputBase-root #mui-2-helper-text {
+  display: none;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    margin-left: 32px;
+    position: relative;
+    &.right {
+      background-color: gray;
+      height: 100%;
+      width: 50%;
+      background: no-repeat fixed center url('../../assets/images/Cats_Munchkin_Kittens_Cute_Four_4_566399_1920x1080.jpg');
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      gap: 16px;
+      &:nth-child(2) {
+        position: relative;
+        padding-bottom: 32px;
+      }
+    }
+
+    #button {
+      width: 80%;
+    }
+  }
+}
